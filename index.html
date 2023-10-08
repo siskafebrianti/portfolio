@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!--    favicon-->
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <!-- compiled from input.css -->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <!-- overwrite custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="navigation-wrapper navigation-wrapper-two-two w-full bg-primary-900 h-[90px]"
+      >
+        <div class="theme-container h-full mx-auto">
+          <div class="w-full h-full flex justify-between items-center">
+            <a href="index.html">
+              <h1 class="text-white">Siska Febrianti</h1>
+            </a>
+            <nav class="nav-wrapper nav-wrapper-2 lg:block hidden">
+              <ul class="flex space-x-7 items-center">
+                <li>
+                  <a href="index.html" class="">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" class="">
+                    <span>About</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#skills" class="">
+                    <span>Skills</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#education" class="">
+                    <span>Education</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#project" class="">
+                    <span>Project</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" class="">
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="nav-wrapper mobile-nav-wrapper block lg:hidden">
+              <div class="mobile-drawer">
+                <div
+                  class="mobile-wid w-[310px] bg-white fixed top-0 h-full px-8 pt-10 z-40"
+                  style="z-index: 99999"
+                >
+                  <div class="flex justify-center mb-10">
+                    <div class="logo-area w-[180px] h-[55px]">
+                      <img
+                        src="./assets/img/logo.svg"
+                        alt="insucom"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                  <ul class="flex flex-col mb-10">
+                    <li>
+                      <a href="index.html" class="">
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#about" class="">
+                        <span>About</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#skills" class="">
+                        <span>Skills</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#education" class="">
+                        <span>Education</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#project" class="">
+                        <span>Project</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#contact" class="">
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  onclick="drawerHandler()"
+                  class="drawer-away w-full h-full fixed bg-black bg-opacity-80 z-30 left-0 top-0"
+                ></div>
+              </div>
+            </nav>
+            <button
+              type="button"
+              onclick="drawerHandler()"
+              class="w-[77px] h-full flex lg:hidden justify-center items-center"
+            >
+              <span class="text-white">
+                <svg
+                  width="28"
+                  height="22"
+                  viewBox="0 0 28 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 11H0"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></path>
+                  <path
+                    d="M21 21H0"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></path>
+                  <path
+                    d="M20 1H0"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--      hero -->
+      <section class="hero-area-2 w-full lg:h-[758px] py-20 relative">
+        <div class="theme-container h-full mx-auto">
+          <div
+            class="w-full grid lg:grid-cols-2 grid-cols-1 gap-[30px] lg:gap-0 h-full justify-center items-center"
+          >
+            <div class="article-area">
+              <h1
+                class="text-primary-900 xl:text-[70px] text-[50px] font-bold leading-[60px] xl:leading-[70px] mb-5 text-center lg:text-start"
+              >
+                Hello, <br class="lg:block hidden" />
+                Selamat Datang <br class="sm:block hidden" />
+              </h1>
+              <p
+                class="text-primary-900 text-base leading-7 mb-9 text-center lg:text-start"
+              >
+                saya merupakan mahasiswa teknik informatika
+                <br />
+                Universitas Pendidikan Ganesha
+              </p>
+              <div
+                class="flex justify-center lg:justify-start space-x-10 items-center"
+              >
+                <a href="assets/download-cv.pdf">
+                  <div
+                    class="px-[46px] py-[20px] bg-primary-500 hover:bg-primary-900 common-trans rounded-lg text-white text-lg spline-sans leading-none"
+                  >
+                    <span>Download CV</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="thumb-area xl:h-auto h-[500px] transform xl:scale-100 scale-90"
+            >
+              <img
+                src="./assets/img/profile.png"
+                alt=""
+                class="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--      about section-->
+      <section id="about" class="about-section-area w-full lg:py-[120px] py-[60px]">
+        <div class="theme-container mx-auto">
+          <div
+            class="w-full grid xl:grid-cols-2 grid-cols-1 gap-10 xl:gap-0 items-center"
+          >
+            <div class="thumb-area relative md:w-[600px] w-full">
+              <img src="./assets/img/about-me.png" alt="" />
+            </div>
+            <div class="article-area">
+              <h2 class="headline-default text-primary-900 mb-5">
+                About Me
+              </h2>
+              <p
+                class="text-base text-primary-100 mb-[30px] xl:max-w-full max-w-4xl"
+              >
+                Hello,  Siska Febrianti, lahir di singaraja tanggal 10 februari 2002, tinggal di Jalan. Sam Ratulangi gang Kelinci Penarukan. Saat ini sedang menempuh pendidikan D4 Teknologi Rekayasa Perangkat Lunak. Prinsip hidup ingin menjadi yang lebih baik dari hari ini, dengan beberapa aktivitas yang saya sukai.
+              </p>
+              <ul class="flex flex-col space-y-2.5 mb-8">
+                <li class="flex space-x-2.5 items-center">
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#028835" />
+                      <path
+                        d="M14.2656 6.98438C14.5703 7.26562 14.5703 7.75781 14.2656 8.03906L8.26562 14.0391C7.98438 14.3438 7.49219 14.3438 7.21094 14.0391L4.21094 11.0391C3.90625 10.7578 3.90625 10.2656 4.21094 9.98438C4.49219 9.67969 4.98438 9.67969 5.26562 9.98438L7.72656 12.4453L13.2109 6.98438C13.4922 6.67969 13.9844 6.67969 14.2656 6.98438Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <span class="lg:text-base text-sm text-primary-900"
+                    >Travelling</span
+                  >
+                </li>
+                <li class="flex space-x-2.5 items-center">
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#028835" />
+                      <path
+                        d="M14.2656 6.98438C14.5703 7.26562 14.5703 7.75781 14.2656 8.03906L8.26562 14.0391C7.98438 14.3438 7.49219 14.3438 7.21094 14.0391L4.21094 11.0391C3.90625 10.7578 3.90625 10.2656 4.21094 9.98438C4.49219 9.67969 4.98438 9.67969 5.26562 9.98438L7.72656 12.4453L13.2109 6.98438C13.4922 6.67969 13.9844 6.67969 14.2656 6.98438Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <span class="lg:text-base text-sm text-primary-900"
+                    >Hiking</span
+                  >
+                </li>
+                <li class="flex space-x-2.5 items-center">
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#028835" />
+                      <path
+                        d="M14.2656 6.98438C14.5703 7.26562 14.5703 7.75781 14.2656 8.03906L8.26562 14.0391C7.98438 14.3438 7.49219 14.3438 7.21094 14.0391L4.21094 11.0391C3.90625 10.7578 3.90625 10.2656 4.21094 9.98438C4.49219 9.67969 4.98438 9.67969 5.26562 9.98438L7.72656 12.4453L13.2109 6.98438C13.4922 6.67969 13.9844 6.67969 14.2656 6.98438Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <span class="lg:text-base text-sm text-primary-900"
+                    >Swimming</span
+                  >
+                </li>
+                <li class="flex space-x-2.5 items-center">
+                  <span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="10" cy="10" r="10" fill="#028835" />
+                      <path
+                        d="M14.2656 6.98438C14.5703 7.26562 14.5703 7.75781 14.2656 8.03906L8.26562 14.0391C7.98438 14.3438 7.49219 14.3438 7.21094 14.0391L4.21094 11.0391C3.90625 10.7578 3.90625 10.2656 4.21094 9.98438C4.49219 9.67969 4.98438 9.67969 5.26562 9.98438L7.72656 12.4453L13.2109 6.98438C13.4922 6.67969 13.9844 6.67969 14.2656 6.98438Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                  <span class="lg:text-base text-sm text-primary-900"
+                    >Olahraga</span
+                  >
+                </li>
+              </ul>
+              <div class="flex space-x-10 items-center">
+                <a href="services.html">
+                  <div
+                    class="px-[46px] py-[20px] bg-primary-500 hover:bg-primary-900 common-trans rounded-lg text-white text-lg spline-sans leading-none"
+                  >
+                    <span>Selengkapnya</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="multisection-wrapper w-full relative">
+        <!-- keahlian section-->
+        <section class="service-area-2 w-full pb-[240px] relative z-10">
+          <div class="theme-container mx-auto">
+            <h2 class="headline-default text-primary-900 mb-[55px] text-center">
+              Beberapa Keahlian Saya
+            </h2>
+            <div class="w-full grid sm:grid-cols-3 grid-cols-1 gap-[30px]">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="service-item bg-white w-full lg:p-10 p-6 rounded border border-primaryBorder"
+              >
+                <p class="text-lg font-semibold text-gray-700 mb-9">
+                  Administrasi
+                </p>
+                <div class="mb-8">
+                  <img
+                    src="./assets/img/documents.svg"
+                    alt=""
+                    width="58"
+                    height="62"
+                  />
+                </div>
+                <p
+                  class="lg:text-lg text-sm font-bold spline-sans sm:leading-7 text-primary-900 mb-5"
+                >
+                  Pengelolaan Dokument
+                </p>
+                <ul class="flex flex-col space-y-2.5">
+                  <li class="flex justify-between items-center">
+                    <span class="lg:text-base text-sm text-primary-900"
+                      >Mengelola Dokument Dengan Baik
+                    </span>
+                    <span>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.6875 1.3125C15.0938 1.6875 15.0938 2.34375 14.6875 2.71875L6.6875 10.7188C6.3125 11.125 5.65625 11.125 5.28125 10.7188L1.28125 6.71875C0.875 6.34375 0.875 5.6875 1.28125 5.3125C1.65625 4.90625 2.3125 4.90625 2.6875 5.3125L5.96875 8.59375L13.2812 1.3125C13.6562 0.90625 14.3125 0.90625 14.6875 1.3125Z"
+                          fill="#028835"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="lg:text-base text-sm text-primary-900"
+                      >Pengelolaan dan Analisis Data
+                    </span>
+                    <span>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.6875 1.3125C15.0938 1.6875 15.0938 2.34375 14.6875 2.71875L6.6875 10.7188C6.3125 11.125 5.65625 11.125 5.28125 10.7188L1.28125 6.71875C0.875 6.34375 0.875 5.6875 1.28125 5.3125C1.65625 4.90625 2.3125 4.90625 2.6875 5.3125L5.96875 8.59375L13.2812 1.3125C13.6562 0.90625 14.3125 0.90625 14.6875 1.3125Z"
+                          fill="#028835"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="lg:text-base text-sm text-primary-900"
+                      >Microsoft Office
+                    </span>
+                    <span>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.6875 1.3125C15.0938 1.6875 15.0938 2.34375 14.6875 2.71875L6.6875 10.7188C6.3125 11.125 5.65625 11.125 5.28125 10.7188L1.28125 6.71875C0.875 6.34375 0.875 5.6875 1.28125 5.3125C1.65625 4.90625 2.3125 4.90625 2.6875 5.3125L5.96875 8.59375L13.2812 1.3125C13.6562 0.90625 14.3125 0.90625 14.6875 1.3125Z"
+                          fill="#028835"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                class="service-item bg-white w-full lg:p-10 p-6 rounded border border-primaryBorder"
+              >
+                <p class="text-lg font-semibold text-gray-700 mb-9">
+                  Multimedia
+                </p>
+                <div class="mb-8">
+                  <img
+                    src="./assets/img/editing.svg"
+                    alt=""
+                    width="58"
+                    height="62"
+                  />
+                </div>
+                <p
+                  class="lg:text-lg text-sm font-bold spline-sans sm:leading-7 text-primary-900 mb-5"
+                >
+                  Membuat Konten
+                </p>
+                <ul class="flex flex-col space-y-2.5">
+                  <li class="flex justify-between items-center">
+                    <span class="lg:text-base text-sm text-primary-900"
+                      >Design Graphics
+                    </span>
+                    <span>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.6875 1.3125C15.0938 1.6875 15.0938 2.34375 14.6875 2.71875L6.6875 10.7188C6.3125 11.125 5.65625 11.125 5.28125 10.7188L1.28125 6.71875C0.875 6.34375 0.875 5.6875 1.28125 5.3125C1.65625 4.90625 2.3125 4.90625 2.6875 5.3125L5.96875 8.59375L13.2812 1.3125C13.6562 0.90625 14.3125 0.90625 14.6875 1.3125Z"
+                          fill="#028835"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="lg:text-base text-sm text-primary-900"
+                      >Fotografer
+                    </span>
+                    <span>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.6875 1.3125C15.0938 1.6875 15.0938 2.34375 14.6875 2.71875L6.6875 10.7188C6.3125 11.125 5.65625 11.125 5.28125 10.7188L1.28125 6.71875C0.875 6.34375 0.875 5.6875 1.28125 5.3125C1.65625 4.90625 2.3125 4.90625 2.6875 5.3125L5.96875 8.59375L13.2812 1.3125C13.6562 0.90625 14.3125 0.90625 14.6875 1.3125Z"
+                          fill="#028835"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="lg:text-base text-sm text-primary-900"
+                      >Editing
+                    </span>
+                    <span>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.6875 1.3125C15.0938 1.6875 15.0938 2.34375 14.6875 2.71875L6.6875 10.7188C6.3125 11.125 5.65625 11.125 5.28125 10.7188L1.28125 6.71875C0.875 6.34375 0.875 5.6875 1.28125 5.3125C1.65625 4.90625 2.3125 4.90625 2.6875 5.3125L5.96875 8.59375L13.2812 1.3125C13.6562 0.90625 14.3125 0.90625 14.6875 1.3125Z"
+                          fill="#028835"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                class="service-item bg-white w-full lg:p-10 p-6 rounded border border-primaryBorder"
+              >
+                <p class="text-lg font-semibold text-gray-700 mb-9">
+                  Team Work
+                </p>
+                <div class="mb-8">
+                  <img
+                    src="./assets/img/team-work.svg"
+                    alt=""
+                    width="58"
+                    height="62"
+                  />
+                </div>
+                <p
+                  class="lg:text-lg text-sm font-bold spline-sans sm:leading-7 text-primary-900 mb-5"
+                >
+                  Disiplin
+                </p>
+                <ul class="flex flex-col space-y-2.5">
+                  <li class="flex justify-between items-center">
+                    <span class="lg:text-base text-sm text-primary-900">
+                      Mampu Bekerja dengan TIM
+                    </span>
+                    <span>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.6875 1.3125C15.0938 1.6875 15.0938 2.34375 14.6875 2.71875L6.6875 10.7188C6.3125 11.125 5.65625 11.125 5.28125 10.7188L1.28125 6.71875C0.875 6.34375 0.875 5.6875 1.28125 5.3125C1.65625 4.90625 2.3125 4.90625 2.6875 5.3125L5.96875 8.59375L13.2812 1.3125C13.6562 0.90625 14.3125 0.90625 14.6875 1.3125Z"
+                          fill="#028835"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="lg:text-base text-sm text-primary-900"
+                      >Disiplin Mengerjakan Tugas
+                    </span>
+                    <span>
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.6875 1.3125C15.0938 1.6875 15.0938 2.34375 14.6875 2.71875L6.6875 10.7188C6.3125 11.125 5.65625 11.125 5.28125 10.7188L1.28125 6.71875C0.875 6.34375 0.875 5.6875 1.28125 5.3125C1.65625 4.90625 2.3125 4.90625 2.6875 5.3125L5.96875 8.59375L13.2812 1.3125C13.6562 0.90625 14.3125 0.90625 14.6875 1.3125Z"
+                          fill="#028835"
+                        />
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- Pendidikan-->
+      <section id="education"
+        class="fun-fact-area lg:pt-[120px] xl:pb-0 lg:pb-[120px] py-[60px] xl:min-h-[1000px]"
+        style="
+          background-color: #004C3F;
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="theme-container mx-auto relative">
+          <div class="faq-wrapper w-full xl:absolute xl:flex items-center">
+            <div class="w-[740px] xl:block hidden rounded-[10px]">
+              <div class="w-full h-[888px]">
+                <img
+                  src="./assets/img/pendidikan.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="flex-1">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                class="faq-main-wrapper xl:w-[630px] sm:px-[60px] sm:py-[80px] px-3 py-10 bg-white rounded xl:absolute top-20 xl:right-10"
+              >
+                <h2 class="headline-default text-primary-900 mb-[42px]">
+                  Riwayat Pendidikan
+                </h2>
+                <div class="w-full flex flex-col space-y-5">
+                  <div
+                    class="faq-item active w-full overflow-hidden rounded border border-primaryBorder"
+                  >
+                    <button
+                      type="button"
+                      class="faq-btn p-5 flex justify-between group hover:bg-primary-500 items-center w-full common-trans sm:text-center text-start"
+                    >
+                      <span
+                        class="sm:text-lg text-sm spline-sans font-semibold group-hover:text-white"
+                        >D4 - TRPL Universitas Pendidikan Ganesha</span
+                      >
+                      <span class="group-hover:text-white">
+                        <svg
+                          width="14"
+                          height="9"
+                          viewBox="0 0 14 9"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="fill-current"
+                        >
+                          <path
+                            d="M7.6875 7.6875C7.3125 8.09375 6.65625 8.09375 6.28125 7.6875L1.28125 2.6875C0.875 2.3125 0.875 1.65625 1.28125 1.28125C1.65625 0.875 2.3125 0.875 2.6875 1.28125L7 5.5625L11.2812 1.28125C11.6562 0.875 12.3125 0.875 12.6875 1.28125C13.0938 1.65625 13.0938 2.3125 12.6875 2.6875L7.6875 7.6875Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-body w-full bg-secondary">
+                      <p
+                        class="sm:text-base text-sm leading-7 text-primary-100"
+                      >
+                        Menjadi mahasiswa D4 Teknologi Rekayasa Perangkat Lunak
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="faq-item w-full overflow-hidden rounded border border-primaryBorder"
+                  >
+                    <button
+                      type="button"
+                      class="faq-btn p-5 flex justify-between group hover:bg-primary-500 items-center w-full common-trans sm:text-center text-start"
+                    >
+                      <span
+                        class="sm:text-lg text-sm spline-sans font-semibold group-hover:text-white"
+                        >SMA Negri 3 Singaraja</span
+                      >
+                      <span class="group-hover:text-white">
+                        <svg
+                          width="14"
+                          height="9"
+                          viewBox="0 0 14 9"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="fill-current"
+                        >
+                          <path
+                            d="M7.6875 7.6875C7.3125 8.09375 6.65625 8.09375 6.28125 7.6875L1.28125 2.6875C0.875 2.3125 0.875 1.65625 1.28125 1.28125C1.65625 0.875 2.3125 0.875 2.6875 1.28125L7 5.5625L11.2812 1.28125C11.6562 0.875 12.3125 0.875 12.6875 1.28125C13.0938 1.65625 13.0938 2.3125 12.6875 2.6875L7.6875 7.6875Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-body w-full bg-secondary">
+                      <p
+                        class="sm:text-base text-sm leading-7 text-primary-100"
+                      >
+                        Sekolah Menengah Atas di SMA Negri 3 Singaraja
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="faq-item w-full overflow-hidden rounded border border-primaryBorder"
+                  >
+                    <button
+                      type="button"
+                      class="faq-btn p-5 flex justify-between group hover:bg-primary-500 items-center w-full common-trans sm:text-center text-start"
+                    >
+                      <span
+                        class="sm:text-lg text-sm spline-sans font-semibold group-hover:text-white"
+                        >SMP Negri 3 Singaraja</span
+                      >
+                      <span class="group-hover:text-white">
+                        <svg
+                          width="14"
+                          height="9"
+                          viewBox="0 0 14 9"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="fill-current"
+                        >
+                          <path
+                            d="M7.6875 7.6875C7.3125 8.09375 6.65625 8.09375 6.28125 7.6875L1.28125 2.6875C0.875 2.3125 0.875 1.65625 1.28125 1.28125C1.65625 0.875 2.3125 0.875 2.6875 1.28125L7 5.5625L11.2812 1.28125C11.6562 0.875 12.3125 0.875 12.6875 1.28125C13.0938 1.65625 13.0938 2.3125 12.6875 2.6875L7.6875 7.6875Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-body w-full bg-secondary">
+                      <p
+                        class="sm:text-base text-sm leading-7 text-primary-100"
+                      >
+                        Sekolah Menengah Pertama di SMP Negri 3 Singaraja
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="faq-item w-full overflow-hidden rounded border border-primaryBorder"
+                  >
+                    <button
+                      type="button"
+                      class="faq-btn p-5 flex justify-between group hover:bg-primary-500 items-center w-full common-trans sm:text-center text-start"
+                    >
+                      <span
+                        class="sm:text-lg text-sm spline-sans font-semibold group-hover:text-white"
+                        >SD Negri 3 Penarukan</span
+                      >
+                      <span class="group-hover:text-white">
+                        <svg
+                          width="14"
+                          height="9"
+                          viewBox="0 0 14 9"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="fill-current"
+                        >
+                          <path
+                            d="M7.6875 7.6875C7.3125 8.09375 6.65625 8.09375 6.28125 7.6875L1.28125 2.6875C0.875 2.3125 0.875 1.65625 1.28125 1.28125C1.65625 0.875 2.3125 0.875 2.6875 1.28125L7 5.5625L11.2812 1.28125C11.6562 0.875 12.3125 0.875 12.6875 1.28125C13.0938 1.65625 13.0938 2.3125 12.6875 2.6875L7.6875 7.6875Z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="faq-body w-full bg-secondary">
+                      <p
+                        class="sm:text-base text-sm leading-7 text-primary-100"
+                      >
+                        Sekolah Dasar di SD Negri 3 Singaraja
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project-->
+      <section id="project" class="safety-section w-full xl:pt-[340px] lg:pt-[60px]  pb-[240px]">
+        <div class="theme-container mx-auto">
+          <h2 class="headline-default text-primary-900 mb-[30px] text-center">
+            Project yang Pernah Saya Kerjakan
+          </h2>
+          <div id="all" class="blog-content active">
+            <div
+              class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-[30px] gap-y-[60px] gap-x-[30px]"
+            >
+              <div class="w-full relative group">
+                <!--                thumb-->
+                <div class="w-full h-[440px] rounded overflow-hidden">
+                  <img
+                    src="./assets/img/project-1.png"
+                    class="w-full h-full object-cover"
+                    alt="blog"
+                  />
+                </div>
+                <div class="w-full px-10 absolute -bottom-[34px]">
+                  <div
+                    style="box-shadow: 0 0 60px rgba(0, 0, 0, 0.05)"
+                    class="w-full h-[68px] bg-white rounded flex justify-center items-center group-hover:bg-primary-500 common-trans"
+                  >
+                    <span
+                      class="text-lg font-bold spline-sans group-hover:text-white text-primary-900 common-trans"
+                      >Ayam Sempol Design Poster</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="w-full relative group">
+                <!--                thumb-->
+                <div class="w-full h-[440px] rounded overflow-hidden">
+                  <img
+                    src="./assets/img/project-2.png"
+                    class="w-full h-full object-cover"
+                    alt="blog"
+                  />
+                </div>
+                <div class="w-full px-10 absolute -bottom-[34px]">
+                  <div
+                    style="box-shadow: 0 0 60px rgba(0, 0, 0, 0.05)"
+                    class="w-full h-[68px] bg-white rounded flex justify-center items-center group-hover:bg-primary-500 common-trans"
+                  >
+                    <span
+                      class="text-lg font-bold spline-sans group-hover:text-white text-primary-900 common-trans"
+                      >Sosial Media Konten</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="w-full relative group">
+                <!--                thumb-->
+                <div class="w-full h-[440px] rounded overflow-hidden">
+                  <img
+                    src="./assets/img/project-1.png"
+                    class="w-full h-full object-cover"
+                    alt="blog"
+                  />
+                </div>
+                <div class="w-full px-10 absolute -bottom-[34px]">
+                  <div
+                    style="box-shadow: 0 0 60px rgba(0, 0, 0, 0.05)"
+                    class="w-full h-[68px] bg-white rounded flex justify-center items-center group-hover:bg-primary-500 common-trans"
+                  >
+                    <span
+                      class="text-lg font-bold spline-sans group-hover:text-white text-primary-900 common-trans"
+                      >Ayam Sempol Design Poster</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer id="contact">
+      <section class="footer-wrapper-two w-full bg-secondary relative">
+        <div class="theme-container mx-auto relative">
+          <div
+            class="discover-area z-20 w-full sm:h-[253px] h-[300px] rounded-[10px] left-0 absolute -top-[125px] lg:px-[60px] p-5 sm:px-[42px] flex sm:flex-row flex-col space-y-14 sm:space-y-0 sm:justify-between sm:items-center"
+          >
+            <div>
+              <p class="text-base leading-7 text-white mb-1">
+                Untuk informasi lebih lanjut
+              </p>
+              <h2 class="headline-default text-white">
+                Berminat kerjasama dengan saya <br class="sm:block hidden" />
+                Kontak Sekarang juga
+              </h2>
+            </div>
+            <div>
+              <a href="https://wa.me/+6285847829721">
+                <div
+                  class="lg:px-10 hover:border-transparent inline lg:py-6 px-8 py-5 border border-white hover:bg-white common-trans rounded-lg text-lg font-semibold leading-4 spline-sans text-white hover:text-primary-500"
+                >
+                  Kontak Saya
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="theme-container mx-auto relative z-10">
+          <div class="w-full pt-[210px]">
+            <div
+              class="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-[30px] items-center lg:justify-between pb-[60px] mb-10 border-b border-primaryBorder"
+            >
+              <div class="flex space-x-[17px] items-center">
+                <div
+                  class="w-[60px] h-[60px] rounded-full flex justify-center items-center bg-white"
+                >
+                  <span>
+                    <svg
+                      width="15"
+                      height="21"
+                      viewBox="0 0 15 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.5625 20.0312C4.53125 17.4922 0 11.4375 0 8C0 3.85938 3.32031 0.5 7.5 0.5C11.6406 0.5 15 3.85938 15 8C15 11.4375 10.4297 17.4922 8.39844 20.0312C7.92969 20.6172 7.03125 20.6172 6.5625 20.0312ZM7.5 10.5C8.86719 10.5 10 9.40625 10 8C10 6.63281 8.86719 5.5 7.5 5.5C6.09375 5.5 5 6.63281 5 8C5 9.40625 6.09375 10.5 7.5 10.5Z"
+                        fill="#028835"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div>
+                  <p
+                    class="text-lg font-semibold spline-sans leading-[27px] mb-1.5 text-primary-900"
+                  >
+                    Alamat
+                  </p>
+                  <p class="text-base leading-[27px] text-primary-100">
+                    Jalan Sam Ratulangi, Singaraja, Bali
+                  </p>
+                </div>
+              </div>
+              <div class="flex space-x-[17px] items-center">
+                <div
+                  class="w-[60px] h-[60px] rounded-full flex justify-center items-center bg-white"
+                >
+                  <span>
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.9609 15.6172L19.0234 19.5625C18.9062 20.1484 18.4375 20.5391 17.8516 20.5391C8.00781 20.5 0 12.4922 0 2.64844C0 2.0625 0.351562 1.59375 0.9375 1.47656L4.88281 0.539062C5.42969 0.421875 6.01562 0.734375 6.25 1.24219L8.08594 5.5C8.28125 6.00781 8.16406 6.59375 7.73438 6.90625L5.625 8.625C6.95312 11.3203 9.14062 13.5078 11.875 14.8359L13.5938 12.7266C13.9062 12.3359 14.4922 12.1797 15 12.375L19.2578 14.2109C19.7656 14.4844 20.0781 15.0703 19.9609 15.6172Z"
+                        fill="#028835"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div>
+                  <p
+                    class="text-lg font-semibold spline-sans leading-[27px] mb-1.5 text-primary-900"
+                  >
+                    No Handphone
+                  </p>
+                  <p class="text-base leading-[27px] text-primary-100">
+                    085847829721
+                  </p>
+                </div>
+              </div>
+              <div class="flex lg:justify-end">
+                <div class="flex space-x-2.5 items-center">
+                  <a
+                    href="https://www.instagram.com/siskaafy_"
+                    class="transform translate-y-0 hover:-translate-y-1 common-trans"
+                  >
+                    <div
+                      style="
+                        box-shadow: 0 4.8px 24.4px -6px rgba(19, 16, 34, 0.1),
+                          0 4px 13px -2px rgba(19, 16, 34, 0.06);
+                      "
+                      class="w-10 h-10 rounded-full bg-white flex justify-center items-center"
+                    >
+                      <span>
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8 3.40625C6 3.40625 4.40625 5.03125 4.40625 7C4.40625 9 6 10.5938 8 10.5938C9.96875 10.5938 11.5938 9 11.5938 7C11.5938 5.03125 9.96875 3.40625 8 3.40625ZM8 9.34375C6.71875 9.34375 5.65625 8.3125 5.65625 7C5.65625 5.71875 6.6875 4.6875 8 4.6875C9.28125 4.6875 10.3125 5.71875 10.3125 7C10.3125 8.3125 9.28125 9.34375 8 9.34375ZM12.5625 3.28125C12.5625 3.75 12.1875 4.125 11.7188 4.125C11.25 4.125 10.875 3.75 10.875 3.28125C10.875 2.8125 11.25 2.4375 11.7188 2.4375C12.1875 2.4375 12.5625 2.8125 12.5625 3.28125ZM14.9375 4.125C14.875 3 14.625 2 13.8125 1.1875C13 0.375 12 0.125 10.875 0.0625C9.71875 0 6.25 0 5.09375 0.0625C3.96875 0.125 3 0.375 2.15625 1.1875C1.34375 2 1.09375 3 1.03125 4.125C0.96875 5.28125 0.96875 8.75 1.03125 9.90625C1.09375 11.0312 1.34375 12 2.15625 12.8438C3 13.6562 3.96875 13.9062 5.09375 13.9688C6.25 14.0312 9.71875 14.0312 10.875 13.9688C12 13.9062 13 13.6562 13.8125 12.8438C14.625 12 14.875 11.0312 14.9375 9.90625C15 8.75 15 5.28125 14.9375 4.125ZM13.4375 11.125C13.2188 11.75 12.7188 12.2188 12.125 12.4688C11.1875 12.8438 9 12.75 8 12.75C6.96875 12.75 4.78125 12.8438 3.875 12.4688C3.25 12.2188 2.78125 11.75 2.53125 11.125C2.15625 10.2188 2.25 8.03125 2.25 7C2.25 6 2.15625 3.8125 2.53125 2.875C2.78125 2.28125 3.25 1.8125 3.875 1.5625C4.78125 1.1875 6.96875 1.28125 8 1.28125C9 1.28125 11.1875 1.1875 12.125 1.5625C12.7188 1.78125 13.1875 2.28125 13.4375 2.875C13.8125 3.8125 13.7188 6 13.7188 7C13.7188 8.03125 13.8125 10.2188 13.4375 11.125Z"
+                            fill="#028835"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- script -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script>
+      AOS.init();
+      new PureCounter();
+    </script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
