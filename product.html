@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!--    favicon-->
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <!-- compiled from input.css -->
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <!-- overwrite custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- VUE JS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <header>
+      <div
+        class="navigation-wrapper navigation-wrapper-two-two w-full bg-primary-900 h-[90px]"
+      >
+        <div class="theme-container h-full mx-auto">
+          <div class="w-full h-full flex justify-between items-center">
+            <a href="index.html">
+              <h1 class="text-white">Siska Febrianti</h1>
+            </a>
+            <nav class="nav-wrapper nav-wrapper-2 lg:block hidden">
+              <ul class="flex space-x-7 items-center">
+                <li>
+                  <a href="index.html" class="">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" class="">
+                    <span>About</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#skills" class="">
+                    <span>Skills</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#education" class="">
+                    <span>Education</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#project" class="">
+                    <span>Project</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="product.html" class="">
+                    <span>Product</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" class="">
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="nav-wrapper mobile-nav-wrapper block lg:hidden">
+              <div class="mobile-drawer">
+                <div
+                  class="mobile-wid w-[310px] bg-white fixed top-0 h-full px-8 pt-10 z-40"
+                  style="z-index: 99999"
+                >
+                  <div class="flex justify-center mb-10">
+                    <div class="logo-area w-[180px] h-[55px]">
+                      <h1 >Siska Febrianti</h1>
+                    </div>
+                  </div>
+                  <ul class="flex flex-col mb-10">
+                    <li>
+                      <a href="index.html" class="">
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#about" class="">
+                        <span>About</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#skills" class="">
+                        <span>Skills</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#education" class="">
+                        <span>Education</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#project" class="">
+                        <span>Project</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#contact" class="">
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  onclick="drawerHandler()"
+                  class="drawer-away w-full h-full fixed bg-black bg-opacity-80 z-30 left-0 top-0"
+                ></div>
+              </div>
+            </nav>
+            <button
+              type="button"
+              onclick="drawerHandler()"
+              class="w-[77px] h-full flex lg:hidden justify-center items-center"
+            >
+              <span class="text-white">
+                <svg
+                  width="28"
+                  height="22"
+                  viewBox="0 0 28 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 11H0"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></path>
+                  <path
+                    d="M21 21H0"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></path>
+                  <path
+                    d="M20 1H0"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      
+            <!--      page title section-->
+            <section class="page-title-wrapper w-full h-[345px]">
+              <div class="theme-container mx-auto h-full">
+                <div
+                  class="w-full h-full flex sm:flex-row flex-col sm:justify-between justify-center space-y-3 sm:space-y-0 items-center"
+                >
+                  <h2 class="headline-default text-primary-900">Product</h2>
+                  <ul class="breadcrumb-wrapper flex space-x-5 items-center">
+                    <li class="breadcrumb-item">
+                      <a href="#">
+                        <div class="flex space-x-5 items-center">
+                          <span
+                            class="sm:text-lg text-primary-500 sm:leading-[27px] text-sm font-semibold spline-sans"
+                            >Home</span
+                          >
+                          <span class="ico">
+                            <svg
+                              width="9"
+                              height="13"
+                              viewBox="0 0 9 13"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 12.5C1.71875 12.5 1.46875 12.4062 1.28125 12.2188C0.875 11.8438 0.875 11.1875 1.28125 10.8125L5.5625 6.5L1.28125 2.21875C0.875 1.84375 0.875 1.1875 1.28125 0.8125C1.65625 0.40625 2.3125 0.40625 2.6875 0.8125L7.6875 5.8125C8.09375 6.1875 8.09375 6.84375 7.6875 7.21875L2.6875 12.2188C2.5 12.4062 2.25 12.5 2 12.5Z"
+                                fill="#028835"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="#">
+                        <div class="flex space-x-5 items-center">
+                          <span
+                            class="sm:text-lg text-primary-500 sm:leading-[27px] text-sm font-semibold spline-sans"
+                            >Product</span
+                          >
+                          <span class="ico">
+                            <svg
+                              width="9"
+                              height="13"
+                              viewBox="0 0 9 13"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 12.5C1.71875 12.5 1.46875 12.4062 1.28125 12.2188C0.875 11.8438 0.875 11.1875 1.28125 10.8125L5.5625 6.5L1.28125 2.21875C0.875 1.84375 0.875 1.1875 1.28125 0.8125C1.65625 0.40625 2.3125 0.40625 2.6875 0.8125L7.6875 5.8125C8.09375 6.1875 8.09375 6.84375 7.6875 7.21875L2.6875 12.2188C2.5 12.4062 2.25 12.5 2 12.5Z"
+                                fill="#028835"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!--      main content -->
+            <div class="lg:pt-[120px] lg:pb-[240px] pt-[60px] pb-[120px]"  id="app">
+              <div class="theme-container mx-auto">
+                <div class="lg:grid grid-cols-12 gap-[30px] sm:mb-0">
+                  <div class="body-content-wrapper lg:col-span-8 mb-10 lg:mb-0">
+                    <div class="border-b border-primaryBorder ">
+                      <div
+                        class="grid sm:grid-cols-2 grid-cols-1 gap-[30px] items-center "
+                      >
+                        <div class="article-area">
+                          <p
+                            class="sm:text-xl sm:leading-8 text-lg font-bold spline-sans text-primary-500 mb-2"
+                          >
+                            Product
+                          </p>
+                          <h2 class="headline-default text-primary-900 mb-5">
+                            List Product
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-[30px]">
+                      <div v-for="(product, index) in products"
+                        class="w-full rounded overflow-hidden border border-primaryBorder group"
+                      >
+                        <div class="w-full px-5 pt-5 mb-5">
+                          <h2
+                            class="font-bold text-gray-900 spline-sans text-lg leading-7 "
+                          >{{ product.name }}
+                          </h2>
+                          <p class="text-base leading-[27px] text-gray-900 mb-2.5">
+                            {{product.category}}
+                          </p>
+                          <p class="text-base leading-[27px] text-primary-100 mb-2.5">
+                            {{product.description}}
+                          </p>
+                          <p class="sm:text-xl sm:leading-8 text-lg font-bold spline-sans text-primary-500 mb-5">
+                            Rp {{product.price}}
+                          </p>
+                          <button @click="deleteProduct(index)">
+                            <div
+                              class="w-[50px] h-[50px] rounded flex justify-center items-center text-primary-900 bg-primary-50 hover:text-white hover:bg-primary-900 common-trans"
+                            >
+                              <span>
+                                <svg width="30"
+                                height="30" xmlns="http://www.w3.org/2000/svg" id="delete" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><path d="M10 3v3h9V3a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1z"></path><path d="M4 5v1h21V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1zM6 8l1.812 17.209A2 2 0 0 0 9.801 27H19.2a2 2 0 0 0 1.989-1.791L23 8H6zm4.577 16.997a.999.999 0 0 1-1.074-.92l-1-13a1 1 0 0 1 .92-1.074.989.989 0 0 1 1.074.92l1 13a1 1 0 0 1-.92 1.074zM15.5 24a1 1 0 0 1-2 0V11a1 1 0 0 1 2 0v13zm3.997.077a.999.999 0 1 1-1.994-.154l1-13a.985.985 0 0 1 1.074-.92 1 1 0 0 1 .92 1.074l-1 13z"></path></svg>
+                              </span>
+                            </div>
+                          </button>
+                        </div>
+                        <div class="w-full h-[275px] relative">
+                          <div class="w-full h-full">
+                            <img
+                              src="./assets/img/project-1.png"
+                              alt="blog"
+                              class="w-full h-full object-cover"
+                            />
+                          </div>
+                          <div
+                            class="w-full h-full flex justify-center bg-primary-500 bg-opacity-80 items-center absolute left-0 top-0 opacity-0 group-hover:opacity-100 common-trans"
+                          >
+                            <a href="#">
+                              <div
+                                class="w-[60px] h-[60px] rounded-full bg-white flex justify-center items-center"
+                              >
+                                <span>
+                                  <svg
+                                    width="15"
+                                    height="13"
+                                    viewBox="0 0 15 13"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M13.6875 7.71875L8.6875 12.7188C8.5 12.9062 8.25 13 8 13C7.71875 13 7.46875 12.9062 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
+                                      fill="#028835"
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <aside class="aside-wrapper lg:col-span-4">
+                    <div class="w-full mt-[60px]">
+                      <p
+                        class="text-lg leading-7 spline-sans font-bold text-primary-900 mb-[20px]"
+                      >
+                        Add Product
+                      </p>
+                        <label class="block mb-5">
+                          <input
+                            v-model="name"
+                            placeholder="Nama Produk"
+                            type="text"
+                            class="focus:outline-none focus:ring-0 w-full h-[50px] rounded border-primaryBorder border placeholder:text-primary-100 text-black text-base px-5"
+                          />
+                        </label>
+                        <label class="block mb-5">
+                          <input 
+                            v-model="description"
+                            placeholder="Deskripsi Produk"
+                            type="text"
+                            class="focus:outline-none focus:ring-0 w-full h-[50px] rounded border-primaryBorder border placeholder:text-primary-100 text-black text-base px-5"
+                          />
+                        </label>
+                        <label class="block mb-5">
+                          <input 
+                            v-model="category"
+                            placeholder="Kategori Produk"
+                            type="text"
+                            class="focus:outline-none focus:ring-0 w-full h-[50px] rounded border-primaryBorder border placeholder:text-primary-100 text-black text-base px-5"
+                          />
+                        </label>
+                        <label class="block mb-5">
+                          <input
+                            v-model="price"
+                            placeholder="Harga"
+                            type="number"
+                            class="focus:outline-none focus:ring-0 w-full h-[50px] rounded border-primaryBorder border placeholder:text-primary-100 text-black text-base px-5"
+                          />
+                        </label>
+                        <button
+                          class="w-full h-[50px] rounded bg-primary-500 text-white text-lg font-semibold spline-sans hover:bg-primary-900 common-trans"
+                          @click="addProduct"
+                        >
+                          Submit Now
+                        </button>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+           
+    </main>
+    <!-- script -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+     <!-- VUE JS -->
+     <script type="module">
+      import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+      createApp({
+        data(){
+          return {
+            products: [
+              {
+                name: 'Sempol Ayam',
+                category: 'Makanan',
+                description: 'Sempol Ayam Lezat dan Bergizi',
+                price: '10000'
+              },
+              {
+                name: "Es Teh",
+                category: 'Minuman',
+                description: 'Es Teh Manis Segar',
+                price: '3000'
+              }
+            ],
+            name: '',
+            category: '',
+            description: '',
+            price:''
+          }
+        },
+        methods: {
+          addProduct(){
+            let newProduct = {
+              name: this.name,
+              description: this.description,
+              category: this.category,
+              price: this.price
+            }
+            this.products.push(newProduct)
+          },
+          deleteProduct(index){
+            this.products.splice(index,1)
+          }
+        }
+      }).mount('#app')
+    </script>
+</html>
